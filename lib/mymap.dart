@@ -13,9 +13,21 @@ class MyMap extends StatefulWidget {
 }
 
 class _MyMapState extends State<MyMap> {
+  late BitmapDescriptor customMarker;
   BitmapDescriptor markericon = BitmapDescriptor.defaultMarker;
   // final loc.Location location = loc.Location();
   late GoogleMapController _controller;
+  @override
+  void initState() {
+    super.initState();
+    BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(),
+      'images/bus.png',
+    ).then((value) => setState(() {
+          customMarker = value;
+        }));
+  }
+
   bool _added = false;
   @override
   Widget build(BuildContext context) {
@@ -42,8 +54,7 @@ class _MyMapState extends State<MyMap> {
                       FirebaseAuth.instance.currentUser!.uid)['longitude'],
                 ),
                 markerId: const MarkerId('id'),
-                icon: BitmapDescriptor.defaultMarkerWithHue(
-                    BitmapDescriptor.hueMagenta)),
+                icon: customMarker),
           },
           initialCameraPosition: CameraPosition(
               target: LatLng(

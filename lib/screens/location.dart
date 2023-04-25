@@ -21,6 +21,11 @@ class _LocationState extends State<Location> {
   Stream<Position> position = Geolocator.getPositionStream();
   final Geolocator geolocator = Geolocator();
   StreamSubscription<Position>? _locationSubscription;
+  @override
+  void initState() {
+    super.initState();
+    _listenLocation();
+  }
 
   bool change = false;
   @override

@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:tracker/firebasedatabase.dart';
+
 import 'package:tracker/screens/first.dart';
 
 class Splash extends StatefulWidget {
@@ -18,7 +18,7 @@ class _SplashState extends State<Splash> {
       print("After 2 seconds");
       //This block of code will execute after 3 sec of app launch
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const MyListView()));
+          context, MaterialPageRoute(builder: (context) => const First()));
     });
     super.initState();
   }

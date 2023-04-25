@@ -308,12 +308,6 @@ class _StudentMapState extends State<StudentMap> {
                                     const SizedBox(
                                       height: 30,
                                     ),
-                                    Row(
-                                      children: [
-                                        Text(Driver['latitude'].toString()),
-                                        Text(Driver['longitude'].toString())
-                                      ],
-                                    ),
 
                                     Padding(
                                       padding: const EdgeInsets.symmetric(

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "182479046956",
+    "firebase_url": "https://location-tracker-6c85b-default-rtdb.firebaseio.com",
     "project_id": "location-tracker-6c85b",
     "storage_bucket": "location-tracker-6c85b.appspot.com"
   },
@@ -18,6 +19,43 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.tracker",
+            "certificate_hash": "150a745298294ac317e889cab833b60abd5c89b2"
+          }
+        },
+        {
+          "client_id": "182479046956-3hu3knlkhceaq96m32l9pbe680sa3cfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2HUK5tbHT6vtpLSgvEk5zcBBLwUSjbRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182479046956-3hu3knlkhceaq96m32l9pbe680sa3cfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182479046956:android:08de810546c59b8ad9c489",
+        "android_client_info": {
+          "package_name": "com.nbkr.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182479046956-emrtj3okmds8o9voeh364ns4r66khvuv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nbkr.tracker",
             "certificate_hash": "150a745298294ac317e889cab833b60abd5c89b2"
           }
         },
